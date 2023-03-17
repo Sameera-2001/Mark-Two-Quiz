@@ -42,7 +42,18 @@ for(var i=0;i<arr.length;i++)
   {
     play(arr[i].question,arr[i].answer);
   }
-
+console.log("Chandler got married to?");
+    var options =['Joey','Monica','Phoebe'];
+    var selectedOption=readlineSync.keyInSelect(options, 'Which option?');
+    if(options[selectedOption]==="Monica")
+    {
+      console.log("You are right!");
+      score+=1;
+    }
+    else
+    {
+      console.log("Oops you are wrong!");
+    }
 console.log("Your final score is "+score);
 if(score>=highestScore)
 {
