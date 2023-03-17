@@ -1,8 +1,8 @@
 var readlineSync=require('readline-sync');
-var userName=readlineSync.question("Enter your name: ");
+var Name=readlineSync.question("Enter your name: ");
 var score=0;
 var highestScore=5;
-console.log("Hi "+userName+" welcome to quiz. We wish you luck");
+console.log("Hi "+Name+" welcome to quiz. We wish you luck");
 //console.log();
 function play(question,answer)
 {
@@ -58,5 +58,5 @@ console.log("Your final score is "+score);
 if(score>=highestScore)
 {
   console.log("Cogratulations you have beaten highscore!");
-  highestScoreName=userName;
+  highestScoreName=Name;
 }
